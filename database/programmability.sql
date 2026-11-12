@@ -30,7 +30,7 @@ END$$
 
 -- ---------------------------------------------------------------------
 -- TRIGGER 1 (BEFORE INSERT on workout_sets)
--- Business rule: once a workout is finished it is locked - no more sets can be logged.
+-- Business rule: once a workout is finished it is locked no more sets can be logged.
 -- ---------------------------------------------------------------------
 DROP TRIGGER IF EXISTS trg_sets_locked_session$$
 CREATE TRIGGER trg_sets_locked_session

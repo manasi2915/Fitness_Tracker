@@ -153,7 +153,7 @@ WITH RECURSIVE streak AS (
 SELECT u.name AS member, h.name AS habit,
        MAX(s.len) AS streak_days,
        MAX(s.day) AS last_checkin,
-       MAX(s.day) = UTC_DATE() AS done_today
+       MAX(s.day) = UTC_DATE() AS done_today 
 FROM streak s
 JOIN habits h ON h.id = s.habit_id
 JOIN users u ON u.id = h.user_id

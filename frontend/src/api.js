@@ -6,7 +6,7 @@ const api = axios.create({
     timeout: 15000
 });
 
-// Attach the JWT to every request
+// Attach the JWT to every request (every api request call made)--one token generated per user
 api.interceptors.request.use(config => {
     const token = localStorage.getItem('token');
     if (token) {

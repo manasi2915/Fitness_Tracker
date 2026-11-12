@@ -1,4 +1,4 @@
-// Runs a .sql file statement-by-statement, honouring MySQL's DELIMITER command
+// Runs a .sql file statement by statement, honouring MySQL's DELIMITER command
 // (needed for CREATE TRIGGER / CREATE PROCEDURE bodies, which contain semicolons).
 // Works with mysql2 connections without multipleStatements.
 const fs = require('fs');
